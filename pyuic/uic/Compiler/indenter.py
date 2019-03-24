@@ -56,14 +56,14 @@ class _IndentedCodeWriter(object):
     def write(self, line):
         if line.strip():
             if indentwidth > 0:
-                indent = " " * indentwidth
-                line = line.replace("\t", indent)
+                indent = u" " * indentwidth
+                line = line.replace(u"\t", indent)
             else:
-                indent = "\t"
+                indent = u"\t"
 
-            self.output.write("%s%s\n" % (indent * self.level, line))
+            self.output.write(u"%s%s\n" % (indent * self.level, line))
         else:
-            self.output.write("\n")
+            self.output.write(u"\n")
 
 
 def createCodeIndenter(output):

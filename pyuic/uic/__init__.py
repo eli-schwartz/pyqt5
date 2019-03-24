@@ -43,7 +43,7 @@ __all__ = ("compileUi", "compileUiDir", "loadUiType", "loadUi", "widgetPluginPat
 from .Compiler import indenter, compiler
 
 
-_header = """# -*- coding: utf-8 -*-
+_header = u"""# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file '%s'
 #
@@ -54,7 +54,7 @@ _header = """# -*- coding: utf-8 -*-
 """
 
 
-_display_code = """
+_display_code = u"""
 
 if __name__ == "__main__":
 \timport sys
